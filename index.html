@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube_clone</title>
+    <link rel="stylesheet" href="style.css" / type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+    <!--Navbar starts-->
+    <div class="nav">
+        <div class="nav_left">
+            <i class="material-icons">menu</i>
+            <img src="data:image/png;base64,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"
+                alt="logo">
+        </div>
+        <div class="nav_mid">
+            <form>
+                <input type="text" placeholder="Search">
+                <button><i class="material-icons">search</i></button>
+                <i class="material-icons">mic</i>
+            </form>
+        </div>
+        <div class="nav_right">
+            <i class="material-icons">video_call</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">notifications</i>
+            <i class="material-icons">account_circle</i>
+        </div>
+    </div>
+    <!--Navbar ends-->
+
+    <!--Mainbody Starts-->
+    <div class="mainbody">
+        <!--Sidebar Starts-->
+        <div class="sidebar">
+            <div class="sidebar_categories">
+                <div class="sidebar_category">
+                    <i class="material-icons">home</i>
+                    <span>Home</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">explore</i>
+                    <span>Explore</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">subscriptions</i>
+                    <span>Subscriptions</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">video_library</i>
+                    <span>Library</span>
+                </div>
+            </div>
+        </div>
+        <!--Sidebar Ends-->
+
+        <!--Videos section starts-->
+
+        <div class="videos">
+            <h1>Recommended</h1>
+            <div class="video_container">
+                <!--Single Video Starts-->
+                <table>
+                    <tr>
+                        <td>
+                            <div class="video">
+                                <div class="video_thumbnail">
+                                    <img src="https://i.ytimg.com/vi/GTzNnNG47kw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAPZWU1FXNyKVvD7f2Q4lK9PEjB8g" alt="Current Affairs">
+                                </div>
+                                <div class="video_details">
+                                    <div class="author">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLQQo1I2KhpGHSfVtrnldLlpjbIyl_fyyEMZkzie=s68-c-k-c0x00ffffff-no-rj" alt="HVS">
+                                    </div>
+                                    <div class="title">
+                                        <h3>08 Aug 2021 Current Affairs Questions | India & World Current Affairs | Current Affairs 2021 Aug |</h3>
+                                        <a href="">HVS Studies</a>
+                                        <span>1.7K Views . 3 Hours Ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="video">
+                                <div class="video_thumbnail">
+                                    <img src="https://i.ytimg.com/an_webp/yP4yePOjJBg/mqdefault_6s.webp?du=3000&sqp=CPiPvogG&rs=AOn4CLBXa8V1oseU-Dt1DbqymXkgyK2sTw" alt="IP Addressing">
+                                </div>
+                                <div class="video_details">
+                                    <div class="author">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTG1HX0COCnmz6Oy9ENcUvHjOz6Zmx6KTjbduQ3Qg=s68-c-k-c0x00ffffff-no-rj" alt="Masters in I.T">
+                                    </div>
+                                    <div class="title">
+                                        <h3>IP Addressing Complete Tutorial | Easiest Tutorial of IP Address in Hindi</h3>
+                                        <a href="">Masters in I.T</a>
+                                        <span>63K Views . 4 Months Ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="video">
+                                <div class="video_thumbnail">
+                                    <img src="https://i.ytimg.com/vi/mU6anWqZJcc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCXItolpxDNYJ8bdpX_aYK57pXkig" alt="HTML5 & CSS">
+                                </div>
+                                <div class="video_details">
+                                    <div class="author">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLRkU2-RDemsCSaVVsPwc-yxtWruCB1Gr2VIgQKOKg=s68-c-k-c0x00ffffff-no-rj" alt="freeCodeCamp.org">
+                                    </div>
+                                    <div class="title">
+                                        <h3>Learn HTML5 and CSS3 From Scratch - Full Course</h3>
+                                        <a href="">freeCodeCamp.org</a>
+                                        <span>2.8M Views . 2 Years Ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="video">
+                                <div class="video_thumbnail">
+                                    <img src="https://i.ytimg.com/an_webp/VSEnzzjAm0c/mqdefault_6s.webp?du=3000&sqp=CPHtvYgG&rs=AOn4CLCngqWwtPWAvH7QbmqiCPnpZmlQhw" alt="C Programming for Beginners">
+                                </div>
+                                <div class="video_details">
+                                    <div class="author">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTL1z4EG7eISzu6dMKqOkSqp8YUQHXRnk-J7-XF=s68-c-k-c0x00ffffff-no-rj" alt="Learn Coding">
+                                    </div>
+                                    <div class="title">
+                                        <h3>C Programming Full Course for Beginners (Hindi) | Learn Coding</h3>
+                                        <a href="">Learn Coding</a>
+                                        <span>344K Views . 3 Months Ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--Single Video ends-->
+            </div>
+        </div>
+
+        <!--VIdeos section ends-->
+
+    </div>
+    <!--Mainbody Ends-->
+
+</body>
+
+</html>
